@@ -12,11 +12,11 @@ Get notified before they expire:
 
     helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
     helm repo update
-    helm install grafana prometheus-community/kube-prometheus-stack
+    helm upgrade --install grafana prometheus-community/kube-prometheus-stack
 
 To Search all of the time series data points grouping by job  
 
-        count({__name__=~".+"}) by (job)
+    count({__name__=~".+"}) by (job)
 
 # 2. Install X509 Exporter  
 
