@@ -1,0 +1,6 @@
+prometheusServiceMonitor:
+  extraLabels:
+      release: "grafana"
+prometheusRules:
+  extraLabels:
+      release: "grafana"
